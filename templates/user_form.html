@@ -1,0 +1,8 @@
+<form method="POST" action="{{ action_url }}">
+    <input type="text" name="{{ username_field }}" placeholder="Nombre de usuario">
+    <input type="password" name="{{ password_field }}" placeholder="Contraseña">
+    {% if show_confirm %}
+    <input type="password" name="confirm_password" placeholder="Confirmar Contraseña">
+    {% endif %}
+    <button type="submit">{{ button_text }}</button>
+</form>

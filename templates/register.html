@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/static/css/login.css">
+    <title>Book store - Register</title>
+</head>
+<body>
+    <div>
+        {% with action_url="/register", username_field="username", password_field="password", show_confirm=true, button_text="Register" %}
+            {% include "user_form.html" %}
+        {% endwith %}
+        <a href="/">Login</a>
+    </div>
+</body>
+</html> 

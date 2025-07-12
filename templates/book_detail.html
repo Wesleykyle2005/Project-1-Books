@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="/static/css/book_detail.css">
+    <title>Book: {{ book.title }}</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<body>
+    <div>
+        {% if book %}
+        <div>
+            <div>
+                {% if book.imageLinks %}
+                <img src="{{ book.imageLinks.thumbnail }}" alt="Book cover">
+                {% endif %}
+            </div>
+            <div>
+                <h2>Year:</h2>
+                <p>{% if book.publishedDate %}{{ book.publishedDate }}{% else %}Unknown{% endif %}</p>
+                <h2>ISBN:</h2>
+                {% if book.industryIdentifiers %}
+                <ul>
+                    {% for identifier in book.industryIdentifiers %}
+                    <li>{{ identifier.type }}: {{ identifier.identifier }}</li>
+                    {% endfor %}
+                </ul>
+                {% else %}
+                <p>Unknown</p>
+                {% endif %}
+            </div>
+        </div>
+        <div>
+            <h2>Title:</h2>
+            <p>{{ book.title }}</p>
+            <h2>Author(s):</h2>
+            <p>{% if book.authors %}{{ book.authors|join(', ') }}{% else %}Unknown{% endif %}</p>
+            <h2>Categories:</h2>
+            <p>{% if book.categories %}{{ book.categories|join(', ') }}{% else %}Unknown{% endif %}</p>
+            <h2>Description:</h2>
+            <p>{% if book.description %}{{ book.description|safe }}{% else %}Description not available.{% endif %}</p>
+            <h2>Average rating:</h2>
+            <p>{% if book.averageRating %}{{ book.averageRating }}{% else %}Average rating not available.{% endif %}</p>
+            <h2>Number of ratings:</h2>
+            <p>{% if book.ratingsCount %}{{ book.ratingsCount }}{% else %}Number of ratings not available.{% endif %}</p>
+        </div>
+        {% endif %}
+        {% if error %}
+        <p>{{ error }}</p>
+        {% endif %}
+        <div>
+            <div>
+                <form method="POST" action="/write-review">
+                    <h2>Write a review:</h2>
+                    <label for="rating">Rating:</label>
+                    <input type="number" name="rating" id="rating" min="1" max="5" required>
+                    <label for="text">Review text:</label>
+                    <textarea name="text" id="text" rows="8" required></textarea>
+                    <input type="submit" value="Submit review">
+                    <input type="hidden" name="book_id" value="{{ book_id }}">
+                </form>
+            </div>
+            <div>
+                <h2>Reviews:</h2>
+                <ul>
+                    {% for review in reviews %}
+                    <li>
+                        User: {{ review.username }} Rating: {{ review.rating }}<br>
+                        Review: <br>{{ review.text }}
+                    </li>
+                    {% endfor %}
+                </ul>
+            </div>
+        </div>
+        <div>
+            <a href="/search">Back to search page</a>
+        </div>
+    </div>
+</body>
+</html> 

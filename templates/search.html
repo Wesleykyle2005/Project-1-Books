@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Search Books</title>
+    <link rel="stylesheet" href="/static/css/search.css"> 
+</head>
+<body>
+    <header>
+        {% if 'user_id' in session %}
+        <form method="POST" action="/">
+            <button type="submit">Logout</button>
+        </form>
+        {% endif %}
+        <h1>Search Books</h1>
+    </header>
+    <section>
+        <form method="post" action="/search-books">
+            <label for="isbn">Search by ISBN:</label>
+            <input type="text" name="isbn" id="isbn">
+            <input type="submit" value="Search by ISBN">
+        </form>
+        <form method="post" action="/search-books">
+            <label for="title">Search by Title:</label>
+            <input type="text" name="title" id="title">
+            <input type="submit" value="Search by Title">
+        </form>
+        <form method="post" action="/search-books">
+            <label for="author">Search by Author:</label>
+            <input type="text" name="author" id="author">
+            <input type="submit" value="Search by Author">
+        </form>
+    </section>
+    {% if books %}
+    <section>
+        <h2>Results:</h2>
+        <ul>
+            {% for book in books %}
+                <li>
+                    <strong>Title:</strong> <a href="{{ url_for('book_detail', id=book.id) }}">{{ book.title }}</a><br>
+                    <strong>Author:</strong> {{ book.authors }}<br>
+                    <strong>ISBN:</strong> {{ book.isbn }}
+                </li>
+            {% endfor %}
+        </ul>
+    </section>
+    {% endif %}
+    {% if error %}
+    <p>{{ error }}</p>
+    {% endif %}
+</body>
+</html> 
