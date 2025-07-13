@@ -1,0 +1,45 @@
+:root {
+    --button-color: #ffcc00;
+    --background-color: #f4f4f4;
+    --text-color: #000000;
+}
+
+[data-theme="dark"] {
+    --button-color: #0000ff;
+    --background-color: #000000;
+    --text-color: #ffffff;
+}
+
+body {
+    display: block;
+    background-color: var(--background-color);
+    color: var(--text-color);
+    font-size: 1.5rem;
+    font-family: "Lucida Console", sans-serif;
+    height: 100%;
+    width: 100%;
+}
+
+#toggleTheme {
+    position: absolute;
+    right: 0;
+}
+
+button, a {
+    background-color: var(--button-color);
+    color: var(--text-color);
+    text-decoration: none;
+    text-align: center;
+    font-size: 1.5rem;
+    border: 2px solid var(--text-color);
+}
+
+input{
+    font-size: 1.25rem;
+    border: 2px solid var(--text-color); 
+}
+
+h1{
+    font-size: 2.5rem;
+    text-align: center;
+}

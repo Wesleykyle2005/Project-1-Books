@@ -1,12 +1,14 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" data-theme="light">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Search Books</title>
+    <link rel="stylesheet" href="/static/css/base.css">
     <link rel="stylesheet" href="/static/css/search.css"> 
-</head>
+</head> 
 <body>
+    {% include "toggle_theme.html" %}
     <header>
         {% if 'user_id' in session %}
         <form method="POST" action="/">
@@ -15,7 +17,7 @@
         {% endif %}
         <h1>Search Books</h1>
     </header>
-    <section>
+    <section id="search">
         <form method="post" action="/search-books">
             <label for="isbn">Search by ISBN:</label>
             <input type="text" name="isbn" id="isbn">
@@ -34,13 +36,17 @@
     </section>
     {% if books %}
     <section>
-        <h2>Results:</h2>
-        <ul>
+        <ul  id="list_books">
             {% for book in books %}
-                <li>
-                    <strong>Title:</strong> <a href="{{ url_for('book_detail', id=book.id) }}">{{ book.title }}</a><br>
-                    <strong>Author:</strong> {{ book.authors }}<br>
+                <li  id="item_books">
+                    <strong>Name:</strong> {{ book.title }}
+                    {% if book.images %}
+                        <strong>Image:</strong>
+                        <img src="{{ book.images }}" alt="imagen">
+                    {% endif %}
+                    <strong>Author:</strong> {{ book.authors }}
                     <strong>ISBN:</strong> {{ book.isbn }}
+                    <a href="{{ url_for('book_detail', id=book.id) }}" class="details_button">Ver más detalles</a>
                 </li>
             {% endfor %}
         </ul>
@@ -49,5 +55,7 @@
     {% if error %}
     <p>{{ error }}</p>
     {% endif %}
+
+    <script src="/static/js/toggle-theme.js"></script>
 </body>
 </html> 

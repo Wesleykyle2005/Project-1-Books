@@ -1,8 +1,25 @@
-<form method="POST" action="{{ action_url }}">
-    <input type="text" name="{{ username_field }}" placeholder="Nombre de usuario">
-    <input type="password" name="{{ password_field }}" placeholder="Contraseña">
+<div class="form_container">
+
+    
+    
+<form method="POST" action="{{ action_url }}" id="user_form">
+    <h1>{{title}}</h1>
+    <label for="username">Username:</label>
+    <input type="text" name="{{ username_field }}" placeholder="Username" id="username">
+    <label for="password">Password</label>
+    <input type="password" name="{{ password_field }}" placeholder="Password" id=password>
     {% if show_confirm %}
-    <input type="password" name="confirm_password" placeholder="Confirmar Contraseña">
+    <label for="confirm_password">Confirm password</label>
+    <input type="password" name="confirm_password" placeholder="Confirm password" id="confirm_password">
     {% endif %}
     <button type="submit">{{ button_text }}</button>
+    {% if login %}
+        <a href="/register">Create account</a>
+    {% endif %}
+    {% if register %}
+        <a href="/">Login</a>
+    {% endif %}
+
 </form>
+
+</div>

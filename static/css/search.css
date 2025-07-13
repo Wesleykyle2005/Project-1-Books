@@ -1,1 +1,55 @@
-/* Estilos básicos para la página principal */
+#search{
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+    justify-content: center;
+}
+
+@media (max-width: 600px) {
+    #search {
+        display: flex;
+        flex-direction: column;
+        gap: 2px;
+        justify-content: center;
+        align-items: center;
+    }
+}
+
+
+input[type="submit"] {
+    background-color: var(--button-color);
+    color: var(--text-color);
+    cursor:pointer;
+}
+
+#item_books {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    border: 4px solid var(--text-color);
+    padding: 10px;
+    margin: 10px;
+    list-style: none;
+    gap: 10px;
+}
+
+#list_books{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    width: 85%;
+    justify-content: space-between;
+    align-items: start;
+}
+
+#item_books img {
+    width: 100px;
+}
+
+@media (max-width: 600px) {
+    #item_books {
+        grid-template-columns: 1fr;
+    }
+
+    #list_books {
+        grid-template-columns: 1fr;        
+    }
+}

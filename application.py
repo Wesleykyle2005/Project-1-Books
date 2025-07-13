@@ -28,13 +28,11 @@ def login():
             flash("Invalid username or password", "danger")
     return render_template("login.html")
 
-
 @app.route("/search")
 def search():
     user_id = session.get("user_id")
     print(user_id)
     return render_template("search.html")
-
 
 @app.route("/search-books", methods=["POST"])
 def search_books():
@@ -64,13 +62,13 @@ def search_books():
                 authors = item["volumeInfo"].get("authors", [])
                 book_id = item["id"]
                 isbn = (
-                    item["volumeInfo"]["industryIdentifiers"][0]["identifier"]
-                    if "industryIdentifiers" in item["volumeInfo"]
-                    else "Not available"
+                    item["volumeInfo"].get("industryIdentifiers", [{}])[0].get("identifier", "Not available")
                 )
                 images = (
-                    item["volumeInfo"].get("imageLinks", {}).get("thumbnail", "")
+                    item["volumeInfo"].get("imageLinks", {}).get("smallThumbnail", "")
                 )
+                if images and images.startswith("http://"):
+                    images = images.replace("http://", "https://", 1)
                 book_info = {
                     "title": title,
                     "authors": ", ".join(authors) if authors else "Unknown",
@@ -89,7 +87,6 @@ def search_books():
         return render_template(
             "search.html", error="Could not retrieve book information."
         )
-
 
 @app.route("/book/<id>")
 def book_detail(id):
@@ -111,7 +108,6 @@ def book_detail(id):
         return render_template(
             "book_detail.html", error="Could not retrieve book information."
         )
-
 
 @app.route("/write-review", methods=["POST"])
 def write_review():
@@ -143,13 +139,11 @@ def write_review():
         flash("Review submitted successfully.", "success")
     return redirect(f"/book/{book_id}")
 
-
 @app.route("/logout")
 def logout():
     session.pop("user_id", None)
     flash("Logout successful", "success")
     return redirect(url_for("login"))
-
 
 @app.route("/register", methods=["GET", "POST"])
 def register():
@@ -179,7 +173,6 @@ def register():
                 return redirect(url_for("search"))
     return render_template("register.html")
 
-
 @app.route("/api/<isbn>")
 def book_api(isbn):
     query = db.session.query(Book).filter_by(isbn=isbn)
@@ -207,7 +200,6 @@ def book_api(isbn):
         return jsonify(book_data)
     else:
         return jsonify({"error": "Book not found"}), 404
-
 
 if __name__ == "__main__":
     app.run(debug=True)

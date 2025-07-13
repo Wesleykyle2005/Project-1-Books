@@ -1,21 +1,21 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" data-theme="light">
 <head>
     <meta charset="UTF-8">
+    <link rel="stylesheet" href="/static/css/base.css">
     <link rel="stylesheet" href="/static/css/book_detail.css">
     <title>Book: {{ book.title }}</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 </head>
 <body>
-    <div>
+    {% include "toggle_theme.html" %}
+    <div class="book_main_container">
         {% if book %}
-        <div>
-            <div>
-                {% if book.imageLinks %}
-                <img src="{{ book.imageLinks.thumbnail }}" alt="Book cover">
-                {% endif %}
-            </div>
-            <div>
+        <div class="book_image_container">
+            {% if book.imageLinks %}
+            <img src="{{ book.imageLinks.thumbnail }}" alt="Book cover">
+            {% endif %}
+            <div class="book_info_section">
                 <h2>Year:</h2>
                 <p>{% if book.publishedDate %}{{ book.publishedDate }}{% else %}Unknown{% endif %}</p>
                 <h2>ISBN:</h2>
@@ -30,51 +30,62 @@
                 {% endif %}
             </div>
         </div>
-        <div>
-            <h2>Title:</h2>
-            <p>{{ book.title }}</p>
-            <h2>Author(s):</h2>
-            <p>{% if book.authors %}{{ book.authors|join(', ') }}{% else %}Unknown{% endif %}</p>
-            <h2>Categories:</h2>
-            <p>{% if book.categories %}{{ book.categories|join(', ') }}{% else %}Unknown{% endif %}</p>
-            <h2>Description:</h2>
-            <p>{% if book.description %}{{ book.description|safe }}{% else %}Description not available.{% endif %}</p>
-            <h2>Average rating:</h2>
-            <p>{% if book.averageRating %}{{ book.averageRating }}{% else %}Average rating not available.{% endif %}</p>
-            <h2>Number of ratings:</h2>
-            <p>{% if book.ratingsCount %}{{ book.ratingsCount }}{% else %}Number of ratings not available.{% endif %}</p>
+        <div class="book_info_container">
+            <div class="book_info_section">
+                <h2>Title:</h2>
+                <p>{{ book.title }}</p>
+            </div>
+            <div class="book_info_section">
+                <h2>Author(s):</h2>
+                <p>{% if book.authors %}{{ book.authors|join(', ') }}{% else %}Unknown{% endif %}</p>
+            </div>
+            <div class="book_info_section">
+                <h2>Categories:</h2>
+                <p>{% if book.categories %}{{ book.categories|join(', ') }}{% else %}Unknown{% endif %}</p>
+            </div>
+            <div class="book_info_section">
+                <h2>Description:</h2>
+                <p>{% if book.description %}{{ book.description|safe }}{% else %}Description not available.{% endif %}</p>
+            </div>
+            <div class="book_info_section">
+                <h2>Average rating:</h2>
+                <p>{% if book.averageRating %}{{ book.averageRating }}{% else %}Average rating not available.{% endif %}</p>
+            </div>
+            <div class="book_info_section">
+                <h2>Number of ratings:</h2>
+                <p>{% if book.ratingsCount %}{{ book.ratingsCount }}{% else %}Number of ratings not available.{% endif %}</p>
+            </div>
         </div>
         {% endif %}
         {% if error %}
         <p>{{ error }}</p>
         {% endif %}
-        <div>
-            <div>
-                <form method="POST" action="/write-review">
-                    <h2>Write a review:</h2>
-                    <label for="rating">Rating:</label>
-                    <input type="number" name="rating" id="rating" min="1" max="5" required>
-                    <label for="text">Review text:</label>
-                    <textarea name="text" id="text" rows="8" required></textarea>
-                    <input type="submit" value="Submit review">
-                    <input type="hidden" name="book_id" value="{{ book_id }}">
-                </form>
-            </div>
+        <div class="reviews_container">
+            <h2>Write a review:</h2>
+            <form class="review_form" method="POST" action="/write-review">
+                <label for="rating">Rating:</label>
+                <input type="number" name="rating" id="rating" min="1" max="5" required>
+                <label for="text">Review text:</label>
+                <textarea name="text" id="text" rows="8" required></textarea>
+                <input type="submit" value="Submit review">
+                <input type="hidden" name="book_id" value="{{ book_id }}">
+            </form>
             <div>
                 <h2>Reviews:</h2>
-                <ul>
+                <ul class="reviews_list">
                     {% for review in reviews %}
                     <li>
-                        User: {{ review.username }} Rating: {{ review.rating }}<br>
-                        Review: <br>{{ review.text }}
+                        <strong>User:</strong> {{ review.username }} <strong>Rating:</strong> {{ review.rating }}<br>
+                        <strong>Review:</strong><br>{{ review.text }}
                     </li>
                     {% endfor %}
                 </ul>
             </div>
         </div>
         <div>
-            <a href="/search">Back to search page</a>
+            <a href="/search" class="back_button">Back to search page</a>
         </div>
     </div>
+<script src="/static/js/toggle-theme.js"></script>
 </body>
 </html> 

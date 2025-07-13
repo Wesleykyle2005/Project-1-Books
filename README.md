@@ -2,9 +2,53 @@
 
 Web Programming with Python and JavaScript
 
+## Inspiración y diferencias
+
+Este proyecto está inspirado en el [Project 1 de CS50W](https://docs.cs50.net/ocw/web/projects/1/project1.html).
+
+**Diferencias principales:**
+- El proyecto del enlace pide el uso de Heroku para la base de datos y la API de Goodreads para ratings externos.
+- En este proyecto se utiliza Render.com para la base de datos y la API de Google Books, porque **una versión anterior del proyecto original pedía exactamente esos requisitos** (Render y Google Books). Por eso, las diferencias con esa versión son mínimas y solo afectan detalles menores de integración y presentación.
+
+---
+
 ## Descripción
 
 Este proyecto es una aplicación web para buscar libros, ver detalles, dejar reseñas y gestionar usuarios. Utiliza Flask, SQLAlchemy y la API de Google Books. Puedes usar una base de datos PostgreSQL (recomendado para producción) o SQLite (más sencillo para pruebas locales).
+
+---
+
+## Capturas de pantalla
+
+A continuación se muestran algunas capturas de pantalla de la aplicación en diferentes vistas y modos:
+
+- **Pantalla de búsqueda (modo claro):**
+  ![Pantalla de búsqueda modo claro](static/images/search_light.png)
+
+- **Pantalla de búsqueda (modo oscuro):**
+  ![Pantalla de búsqueda modo oscuro](static/images/search_black.png)
+
+- **Pantalla de login (modo claro):**
+  ![Pantalla de login modo claro](static/images/login.png)
+
+- **Pantalla de login (modo oscuro):**
+  ![Pantalla de login modo oscuro](static/images/login_black.png)
+
+- **Pantalla de registro:**
+  ![Pantalla de registro](static/images/register.png)
+
+---
+
+## Estructura del proyecto
+
+- `application.py`: Lógica principal de la aplicación Flask
+- `database.py`: Modelos y configuración de la base de datos
+- `import.py`: Script para importar libros desde CSV (debes ejecutarlo manualmente para cargar los datos iniciales)
+- `drop_all.py`: Script para eliminar todas las tablas
+- `static/`: Archivos estáticos (CSS, imágenes, JS)
+- `templates/`: Plantillas HTML Jinja2
+- `books.csv`: Datos de libros de ejemplo
+- `requirements.txt`: Dependencias del proyecto
 
 ---
 
@@ -44,11 +88,11 @@ app.config["SQLALCHEMY_DATABASE_URI"] = "sqlite:///libros.db"
 
 ### Opción B: Usar PostgreSQL en Render.com
 
-#### 1. Crea una cuenta en [Render.com](https://render.com/)
-#### 2. Ve a "Dashboard" > "New" > "PostgreSQL"
-#### 3. Ponle un nombre a tu base de datos y crea el servicio
-#### 4. Copia la URL de conexión (formato: `postgresql://usuario:contraseña@host:puerto/nombre_db`)
-#### 5. En tu terminal, configura la variable de entorno:
+1. Crea una cuenta en [Render.com](https://render.com/)
+2. Ve a "Dashboard" > "New" > "PostgreSQL"
+3. Ponle un nombre a tu base de datos y crea el servicio
+4. Copia la URL de conexión (formato: `postgresql://usuario:contraseña@host:puerto/nombre_db`)
+5. En tu terminal, configura la variable de entorno:
 
 ```powershell
 $env:DATABASE_URL = "<tu_url_de_conexion>"
@@ -80,34 +124,12 @@ python application.py
 ---
 
 ## 6. Primer uso
-- Si la base de datos está vacía, se llenará automáticamente con los datos de `books.csv`.
+- Si la base de datos está vacía, **debes ejecutar manualmente** el script `import.py` para cargar los datos de `books.csv`:
+
+```powershell
+python import.py
+```
+
 - Puedes crear una cuenta nueva desde la web.
 - Las búsquedas pueden hacerse por ISBN, título o autor.
 - Solo puedes dejar una reseña por libro y no es editable.
-
----
-
-## Ejemplo: Crear base de datos PostgreSQL en Render.com
-
-1. Ingresa a [Render.com](https://render.com/).
-2. Haz clic en "New" > "PostgreSQL".
-3. Elige un nombre y región para tu base de datos.
-4. Espera a que Render cree la base de datos.
-5. Copia la URL de conexión (aparece en la sección "Connection")
-6. En tu terminal, ejecuta:
-   ```powershell
-   $env:DATABASE_URL = "<tu_url_de_conexion>"
-   ```
-7. Ejecuta el proyecto normalmente. Las tablas y datos se crearán automáticamente.
-
----
-
-## Notas
-- Si usas SQLite, no necesitas crear nada en Render.
-- Si usas PostgreSQL, asegúrate de que la URL esté bien escrita y que tu IP tenga acceso (Render lo permite por defecto).
-- Si tienes problemas, revisa los mensajes de error en la terminal.
-
----
-
-¿Dudas? ¡Abre un issue o pregunta! 😉
-

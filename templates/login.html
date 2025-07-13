@@ -1,17 +1,20 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" data-theme="light">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/static/css/base.css">
     <link rel="stylesheet" href="/static/css/login.css">
     <title>Book store - Login</title>
 </head>
 <body>
-    <div>
-        {% with action_url="/", username_field="username", password_field="password", show_confirm=false, button_text="Login" %}
+    {% include "toggle_theme.html" %}
+    <div id="content">
+        {% with action_url="/", username_field="username", password_field="password", show_confirm=false, button_text="Login", login=true, title="Login" %}
             {% include "user_form.html" %}
         {% endwith %}
-        <a href="/register">Create account</a>
+        
     </div>
+    <script src="/static/js/toggle-theme.js"></script>
 </body>
 </html> 

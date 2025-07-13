@@ -1,0 +1,771 @@
+{
+  "kind": "books#volumes",
+  "totalItems": 1000000,
+  "items": [
+    {
+      "kind": "books#volume",
+      "id": "4RENAQAAMAAJ",
+      "etag": "aHIW+Dl6MY0",
+      "selfLink": "https://www.googleapis.com/books/v1/volumes/4RENAQAAMAAJ",
+      "volumeInfo": {
+        "title": "Harry Potter y la piedra filosofal",
+        "authors": [
+          "J. K. Rowling"
+        ],
+        "publisher": "Turtleback",
+        "publishedDate": "2001",
+        "description": "Rescatado del descuido de su tia y tio, un huerfano con un gran destino matricula en la escuela Hogwarts para Magos y Brujas.",
+        "industryIdentifiers": [
+          {
+            "type": "OTHER",
+            "identifier": "PSU:000053878991"
+          }
+        ],
+        "readingModes": {
+          "text": false,
+          "image": false
+        },
+        "pageCount": 264,
+        "printType": "BOOK",
+        "categories": [
+          "Juvenile Fiction"
+        ],
+        "averageRating": 4,
+        "ratingsCount": 3,
+        "maturityRating": "NOT_MATURE",
+        "allowAnonLogging": false,
+        "contentVersion": "0.4.2.0.preview.0",
+        "panelizationSummary": {
+          "containsEpubBubbles": false,
+          "containsImageBubbles": false
+        },
+        "imageLinks": {
+          "smallThumbnail": "http://books.google.com/books/content?id=4RENAQAAMAAJ&printsec=frontcover&img=1&zoom=5&source=gbs_api",
+          "thumbnail": "http://books.google.com/books/content?id=4RENAQAAMAAJ&printsec=frontcover&img=1&zoom=1&source=gbs_api"
+        },
+        "language": "es",
+        "previewLink": "http://books.google.com.ni/books?id=4RENAQAAMAAJ&q=harry+potter&dq=harry+potter&hl=&cd=1&source=gbs_api",
+        "infoLink": "http://books.google.com.ni/books?id=4RENAQAAMAAJ&dq=harry+potter&hl=&source=gbs_api",
+        "canonicalVolumeLink": "https://books.google.com/books/about/Harry_Potter_y_la_piedra_filosofal.html?hl=&id=4RENAQAAMAAJ"
+      },
+      "saleInfo": {
+        "country": "NI",
+        "saleability": "NOT_FOR_SALE",
+        "isEbook": false
+      },
+      "accessInfo": {
+        "country": "NI",
+        "viewability": "NO_PAGES",
+        "embeddable": false,
+        "publicDomain": false,
+        "textToSpeechPermission": "ALLOWED",
+        "epub": {
+          "isAvailable": false
+        },
+        "pdf": {
+          "isAvailable": false
+        },
+        "webReaderLink": "http://play.google.com/books/reader?id=4RENAQAAMAAJ&hl=&source=gbs_api",
+        "accessViewStatus": "NONE",
+        "quoteSharingAllowed": false
+      },
+      "searchInfo": {
+        "textSnippet": "Rescatado del descuido de su tia y tio, un huerfano con un gran destino matricula en la escuela Hogwarts para Magos y Brujas."
+      }
+    },
+    {
+      "kind": "books#volume",
+      "id": "bftNDwAAQBAJ",
+      "etag": "wE1cWzBnTFw",
+      "selfLink": "https://www.googleapis.com/books/v1/volumes/bftNDwAAQBAJ",
+      "volumeInfo": {
+        "title": "Harry Potter y el legado maldito",
+        "subtitle": "El guión oficial de la producción original del West End",
+        "authors": [
+          "J.K. Rowling",
+          "Jack Thorne",
+          "John Tiffany"
+        ],
+        "publisher": "Pottermore Publishing",
+        "publishedDate": "2018-03-01",
+        "description": "Han pasado diecinueve años desde que Harry Potter, Ron Weasley y Hermione Granger salvaron el mundo mágico. Ahora vuelven con una aventura extraordinaria, acompañados por una nueva generación de valientes estudiantes recién llegados al Colegio Hogwarts de Magia y Hechicería. Mientras Harry lucha contra un pasado que se resiste a quedar atrás, su hijo menor, Albus, siente sobre sí el peso de un legado familiar que nunca quiso llevar. En medio de un conflicto entre el pasado y el presente, padre e hijo se ven envueltos en una carrera por el tiempo. Mientras se enfrentan a unas fuerzas misteriosas, el futuro pende de un hilo. Basado en una historia original de J.K. Rowling, John Tiffany y Jack Thorne, Harry Potter y el legado maldito es el guion de la premiada producción del West End, presentado en su versión íntegra. Esta edición incluye los diálogos y las acotaciones definitivos de esta obra original de dos partes, así como una conversación entre el director John Tiffany y el dramaturgo Jack Thorne, el árbol genealógico de la familia Potter y una línea temporal con los eventos clave del mundo mágico hasta Harry Potter y el legado maldito.",
+        "industryIdentifiers": [
+          {
+            "type": "ISBN_13",
+            "identifier": "9781781105290"
+          },
+          {
+            "type": "ISBN_10",
+            "identifier": "1781105294"
+          }
+        ],
+        "readingModes": {
+          "text": true,
+          "image": false
+        },
+        "pageCount": 355,
+        "printType": "BOOK",
+        "categories": [
+          "Drama"
+        ],
+        "averageRating": 5,
+        "ratingsCount": 1,
+        "maturityRating": "NOT_MATURE",
+        "allowAnonLogging": true,
+        "contentVersion": "2.11.12.0.preview.2",
+        "panelizationSummary": {
+          "containsEpubBubbles": false,
+          "containsImageBubbles": false
+        },
+        "imageLinks": {
+          "smallThumbnail": "http://books.google.com/books/content?id=bftNDwAAQBAJ&printsec=frontcover&img=1&zoom=5&source=gbs_api",
+          "thumbnail": "http://books.google.com/books/content?id=bftNDwAAQBAJ&printsec=frontcover&img=1&zoom=1&source=gbs_api"
+        },
+        "language": "es",
+        "previewLink": "http://books.google.com.ni/books?id=bftNDwAAQBAJ&dq=harry+potter&hl=&cd=2&source=gbs_api",
+        "infoLink": "http://books.google.com.ni/books?id=bftNDwAAQBAJ&dq=harry+potter&hl=&source=gbs_api",
+        "canonicalVolumeLink": "https://books.google.com/books/about/Harry_Potter_y_el_legado_maldito.html?hl=&id=bftNDwAAQBAJ"
+      },
+      "saleInfo": {
+        "country": "NI",
+        "saleability": "NOT_FOR_SALE",
+        "isEbook": false
+      },
+      "accessInfo": {
+        "country": "NI",
+        "viewability": "NO_PAGES",
+        "embeddable": false,
+        "publicDomain": false,
+        "textToSpeechPermission": "ALLOWED",
+        "epub": {
+          "isAvailable": true
+        },
+        "pdf": {
+          "isAvailable": true
+        },
+        "webReaderLink": "http://play.google.com/books/reader?id=bftNDwAAQBAJ&hl=&source=gbs_api",
+        "accessViewStatus": "NONE",
+        "quoteSharingAllowed": false
+      },
+      "searchInfo": {
+        "textSnippet": "Esta edición incluye los diálogos y las acotaciones definitivos de esta obra original de dos partes, así como una conversación entre el director John Tiffany y el dramaturgo Jack Thorne, el árbol genealógico de la familia Potter y una ..."
+      }
+    },
+    {
+      "kind": "books#volume",
+      "id": "n3vng7gyGCYC",
+      "etag": "Ee6Gjx32UGc",
+      "selfLink": "https://www.googleapis.com/books/v1/volumes/n3vng7gyGCYC",
+      "volumeInfo": {
+        "title": "Harry Potter",
+        "publisher": "PediaPress",
+        "readingModes": {
+          "text": false,
+          "image": true
+        },
+        "pageCount": 1011,
+        "printType": "BOOK",
+        "maturityRating": "NOT_MATURE",
+        "allowAnonLogging": false,
+        "contentVersion": "0.1.1.0.preview.1",
+        "panelizationSummary": {
+          "containsEpubBubbles": false,
+          "containsImageBubbles": false
+        },
+        "imageLinks": {
+          "smallThumbnail": "http://books.google.com/books/content?id=n3vng7gyGCYC&printsec=frontcover&img=1&zoom=5&edge=curl&source=gbs_api",
+          "thumbnail": "http://books.google.com/books/content?id=n3vng7gyGCYC&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api"
+        },
+        "language": "en",
+        "previewLink": "http://books.google.com.ni/books?id=n3vng7gyGCYC&pg=PA845&dq=harry+potter&hl=&cd=3&source=gbs_api",
+        "infoLink": "http://books.google.com.ni/books?id=n3vng7gyGCYC&dq=harry+potter&hl=&source=gbs_api",
+        "canonicalVolumeLink": "https://books.google.com/books/about/Harry_Potter.html?hl=&id=n3vng7gyGCYC"
+      },
+      "saleInfo": {
+        "country": "NI",
+        "saleability": "NOT_FOR_SALE",
+        "isEbook": false
+      },
+      "accessInfo": {
+        "country": "NI",
+        "viewability": "PARTIAL",
+        "embeddable": true,
+        "publicDomain": false,
+        "textToSpeechPermission": "ALLOWED",
+        "epub": {
+          "isAvailable": false
+        },
+        "pdf": {
+          "isAvailable": true,
+          "acsTokenLink": "http://books.google.com.ni/books/download/Harry_Potter-sample-pdf.acsm?id=n3vng7gyGCYC&format=pdf&output=acs4_fulfillment_token&dl_type=sample&source=gbs_api"
+        },
+        "webReaderLink": "http://play.google.com/books/reader?id=n3vng7gyGCYC&hl=&source=gbs_api",
+        "accessViewStatus": "SAMPLE",
+        "quoteSharingAllowed": false
+      },
+      "searchInfo": {
+        "textSnippet": "... \u003cb\u003eHarry Potter\u003c/b\u003e and the Half - Blood Prince ( in English ) . London : Blooms- bury , et al . p.465 . UK ISBN 0-7475-8108-8 . 878 Rowling , J. K. ( 2007 ) . \u003cb\u003eHarry Potter\u003c/b\u003e and the Deathly Hallows ( in English ) . London : Blooms- bury , et al&nbsp;..."
+      }
+    },
+    {
+      "kind": "books#volume",
+      "id": "abYKXvCwEToC",
+      "etag": "InXmLdn+5SQ",
+      "selfLink": "https://www.googleapis.com/books/v1/volumes/abYKXvCwEToC",
+      "volumeInfo": {
+        "title": "Harry Potter",
+        "subtitle": "The Story of a Global Business Phenomenon",
+        "authors": [
+          "S. Gunelius"
+        ],
+        "publisher": "Springer",
+        "publishedDate": "2008-06-03",
+        "description": "The Harry Potter books are the bestselling books of all time. In this fascinating study, Susan Gunelius analyzes every aspect of the brand phenomenon that is Harry Potter. Delving into price wars, box office revenue, and brand values, amongst other things, this is the story of the most incredible brand success there has ever been.",
+        "industryIdentifiers": [
+          {
+            "type": "ISBN_13",
+            "identifier": "9780230594104"
+          },
+          {
+            "type": "ISBN_10",
+            "identifier": "0230594107"
+          }
+        ],
+        "readingModes": {
+          "text": true,
+          "image": true
+        },
+        "pageCount": 214,
+        "printType": "BOOK",
+        "categories": [
+          "Business & Economics"
+        ],
+        "averageRating": 3,
+        "ratingsCount": 8,
+        "maturityRating": "NOT_MATURE",
+        "allowAnonLogging": true,
+        "contentVersion": "2.5.6.0.preview.3",
+        "panelizationSummary": {
+          "containsEpubBubbles": false,
+          "containsImageBubbles": false
+        },
+        "imageLinks": {
+          "smallThumbnail": "http://books.google.com/books/content?id=abYKXvCwEToC&printsec=frontcover&img=1&zoom=5&edge=curl&source=gbs_api",
+          "thumbnail": "http://books.google.com/books/content?id=abYKXvCwEToC&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api"
+        },
+        "language": "en",
+        "previewLink": "http://books.google.com.ni/books?id=abYKXvCwEToC&pg=PA165&dq=harry+potter&hl=&cd=4&source=gbs_api",
+        "infoLink": "https://play.google.com/store/books/details?id=abYKXvCwEToC&source=gbs_api",
+        "canonicalVolumeLink": "https://play.google.com/store/books/details?id=abYKXvCwEToC"
+      },
+      "saleInfo": {
+        "country": "NI",
+        "saleability": "FOR_SALE",
+        "isEbook": true,
+        "listPrice": {
+          "amount": 58.91,
+          "currencyCode": "USD"
+        },
+        "retailPrice": {
+          "amount": 41.24,
+          "currencyCode": "USD"
+        },
+        "buyLink": "https://play.google.com/store/books/details?id=abYKXvCwEToC&rdid=book-abYKXvCwEToC&rdot=1&source=gbs_api",
+        "offers": [
+          {
+            "finskyOfferType": 1,
+            "listPrice": {
+              "amountInMicros": 58910000,
+              "currencyCode": "USD"
+            },
+            "retailPrice": {
+              "amountInMicros": 41240000,
+              "currencyCode": "USD"
+            }
+          }
+        ]
+      },
+      "accessInfo": {
+        "country": "NI",
+        "viewability": "PARTIAL",
+        "embeddable": true,
+        "publicDomain": false,
+        "textToSpeechPermission": "ALLOWED",
+        "epub": {
+          "isAvailable": true,
+          "acsTokenLink": "http://books.google.com.ni/books/download/Harry_Potter-sample-epub.acsm?id=abYKXvCwEToC&format=epub&output=acs4_fulfillment_token&dl_type=sample&source=gbs_api"
+        },
+        "pdf": {
+          "isAvailable": true,
+          "acsTokenLink": "http://books.google.com.ni/books/download/Harry_Potter-sample-pdf.acsm?id=abYKXvCwEToC&format=pdf&output=acs4_fulfillment_token&dl_type=sample&source=gbs_api"
+        },
+        "webReaderLink": "http://play.google.com/books/reader?id=abYKXvCwEToC&hl=&source=gbs_api",
+        "accessViewStatus": "SAMPLE",
+        "quoteSharingAllowed": false
+      },
+      "searchInfo": {
+        "textSnippet": "... Potter , Book 8 , RIP . ” ( 9 Nov. 2007 ) , http://www.hpana.com/news.20263.html . &quot; English \u003cb\u003eHarry Potter\u003c/b\u003e Book Flies to Top of German Bestseller List . &quot; ( 25 Jul . 2007 ) ... \u003cb\u003eHarry Potter\u003c/b\u003e Finale Sales Hit 11m . &quot; ( 165 BIBLIOGRAPHY."
+      }
+    },
+    {
+      "kind": "books#volume",
+      "id": "dHaREAAAQBAJ",
+      "etag": "bhSS+igpPqo",
+      "selfLink": "https://www.googleapis.com/books/v1/volumes/dHaREAAAQBAJ",
+      "volumeInfo": {
+        "title": "Harry Potter y la cámara secreta (20 Aniv. Ravenclaw) / Harry Potter and the Cha mber of Secrets (Ravenclaw)",
+        "authors": [
+          "J.K. Rowling"
+        ],
+        "publisher": "National Geographic Books",
+        "publishedDate": "2019-11-30",
+        "description": "Hazte con la edición especial azul de Ravenclaw de Harry Potter y la cámara secreta que conmemora el 20º aniversario de Harry Potter. Mientras Harry espera impaciente en casa de sus insoportables tíos el inicio del segundo curso del Colegio Hogwarts de Magia y Hechicería, un elfo aparece en su habitación y le advierte de que una amenaza mortal se cierne sobre la escuela. Harry no se lo piensa dos veces y, acompañado de Ron, se dirige a Hogwarts en un coche volador. Pero, ¿puede un aprendiz de mago defender la escuela de los malvados que pretenden destruirla? Sin saber que alguien ha abierto la Cámara de los Secretos, dejando escapar una serie de monstruos peligrosos, Harry y sus amigos Ron y Hermione tendrán que enfrentarse con arañas gigantes, serpientes encantadas, fantasmas enfurecidos y, sobre todo, con la mismísima reencarnación de su más temible adversario. ENGLISH DESCRIPTION Exclusive Ravenclaw House Edition of Harry Potter and the Chamber of Secrets – a highly collectable must-have for all Harry Potter fans! The Dursleys were so mean and hideous that summer that all Harry Potter wanted was to get back to the Hogwarts School for Witchcraft and Wizardry. But just as he's packing his bags, Harry receives a warning from a strange, impish creature named Dobby who says that if Harry Potter returns to Hogwarts, disaster will strike. And strike it does. For in Harry's second year at Hogwarts, fresh torments and horrors arise, including an outrageously stuck-up new professor, Gilderoy Lockhart, a spirit named Moaning Myrtle who haunts the girls' bathroom, and the unwanted attentions of Ron Weasley's younger sister, Ginny. But each of these seem minor annoyances when the real trouble begins, and someone -- or something -- starts turning Hogwarts students to stone. Could it be Draco Malfoy, a more poisonous rival than ever? Could it possibly be Hagrid, whose mysterious past is finally told? Or could it be the one everyone at Hogwarts most suspects... Harry Potter himself?",
+        "industryIdentifiers": [
+          {
+            "type": "ISBN_13",
+            "identifier": "9788498389753"
+          },
+          {
+            "type": "ISBN_10",
+            "identifier": "8498389755"
+          }
+        ],
+        "readingModes": {
+          "text": true,
+          "image": false
+        },
+        "pageCount": 0,
+        "printType": "BOOK",
+        "categories": [
+          "Juvenile Fiction"
+        ],
+        "maturityRating": "NOT_MATURE",
+        "allowAnonLogging": false,
+        "contentVersion": "preview-1.0.0",
+        "panelizationSummary": {
+          "containsEpubBubbles": false,
+          "containsImageBubbles": false
+        },
+        "imageLinks": {
+          "smallThumbnail": "http://books.google.com/books/content?id=dHaREAAAQBAJ&printsec=frontcover&img=1&zoom=5&source=gbs_api",
+          "thumbnail": "http://books.google.com/books/content?id=dHaREAAAQBAJ&printsec=frontcover&img=1&zoom=1&source=gbs_api"
+        },
+        "language": "es",
+        "previewLink": "http://books.google.com.ni/books?id=dHaREAAAQBAJ&dq=harry+potter&hl=&cd=5&source=gbs_api",
+        "infoLink": "http://books.google.com.ni/books?id=dHaREAAAQBAJ&dq=harry+potter&hl=&source=gbs_api",
+        "canonicalVolumeLink": "https://books.google.com/books/about/Harry_Potter_y_la_c%C3%A1mara_secreta_20_Ani.html?hl=&id=dHaREAAAQBAJ"
+      },
+      "saleInfo": {
+        "country": "NI",
+        "saleability": "NOT_FOR_SALE",
+        "isEbook": false
+      },
+      "accessInfo": {
+        "country": "NI",
+        "viewability": "NO_PAGES",
+        "embeddable": false,
+        "publicDomain": false,
+        "textToSpeechPermission": "ALLOWED",
+        "epub": {
+          "isAvailable": false
+        },
+        "pdf": {
+          "isAvailable": false
+        },
+        "webReaderLink": "http://play.google.com/books/reader?id=dHaREAAAQBAJ&hl=&source=gbs_api",
+        "accessViewStatus": "NONE",
+        "quoteSharingAllowed": false
+      },
+      "searchInfo": {
+        "textSnippet": "Hazte con la edición especial azul de Ravenclaw de Harry Potter y la cámara secreta que conmemora el 20º aniversario de Harry Potter."
+      }
+    },
+    {
+      "kind": "books#volume",
+      "id": "8mOREAAAQBAJ",
+      "etag": "RYFyESaO8GQ",
+      "selfLink": "https://www.googleapis.com/books/v1/volumes/8mOREAAAQBAJ",
+      "volumeInfo": {
+        "title": "Harry Potter: Un año mágico / Harry Potter –A Magical Year: The Illustrations of Jim Kay",
+        "authors": [
+          "J.K. Rowling"
+        ],
+        "publisher": "National Geographic Books",
+        "publishedDate": "2022-06-07",
+        "description": "Que la magia de Harry Potter te acompañe todos los días del año. Las ediciones ilustradas de Jim Kay han embrujado a toda una generación de lectores de Harry Potter. Rebosante de magia, este volumen reúne sus dibujos más icónicos, una selección de esbozos inéditos y 366 inolvidables citas extraídas de los libros que conforman la serie. Observa el transcurrir del tiempo y las estaciones, celebra cumpleaños y fechas señaladas, mientras te reencuentras con tus personajes favoritos dibujados por Jim Kay, que conjura un año mágico en Hogwarts con pintura, lápiz y píxeles. ENGLISH DESCRIPTION A unique and beautiful gift book celebrating the art of Jim Kay -- 366 magical moments from J.K Rowling’s Harry Potter novels, evoked in spellbinding brushstrokes, characterful ink work, and illuminating pencil sketches. This irresistible gift book takes readers on an unforgettable journey through the seasons at Hogwarts. Jim Kay’s captivating illustrations, paired with much-loved quotations from J.K. Rowling’s Harry Potter novels -- one moment, anniversary, or memory for every day of the year -- bring to life all of the magic, beauty, and wonder of the wizarding world. Jim Kay has been enchanting readers since the publication of the Illustrated Edition of Harry Potter and the Sorcerer’s Stone in 2015. Now, in Harry Potter: A Magical Year, a selection of Kay’s most iconic illustrations are joined by previously unseen pencil sketches and preparatory pieces, offering unique and fascinating insight into the artist’s sketchbook. From the snowy towers of Hogwarts, to the dancing eyes of Professor Albus Dumbledore, to the hustle and bustle of Diagon Alley, this visual feast is the perfect companion for readers of all ages, at any point on their Harry Potter journey, and a gift to cherish for years to come.",
+        "industryIdentifiers": [
+          {
+            "type": "ISBN_13",
+            "identifier": "9788418797125"
+          },
+          {
+            "type": "ISBN_10",
+            "identifier": "8418797126"
+          }
+        ],
+        "readingModes": {
+          "text": true,
+          "image": false
+        },
+        "pageCount": 0,
+        "printType": "BOOK",
+        "categories": [
+          "Juvenile Fiction"
+        ],
+        "maturityRating": "NOT_MATURE",
+        "allowAnonLogging": false,
+        "contentVersion": "preview-1.0.0",
+        "panelizationSummary": {
+          "containsEpubBubbles": false,
+          "containsImageBubbles": false
+        },
+        "imageLinks": {
+          "smallThumbnail": "http://books.google.com/books/content?id=8mOREAAAQBAJ&printsec=frontcover&img=1&zoom=5&source=gbs_api",
+          "thumbnail": "http://books.google.com/books/content?id=8mOREAAAQBAJ&printsec=frontcover&img=1&zoom=1&source=gbs_api"
+        },
+        "language": "es",
+        "previewLink": "http://books.google.com.ni/books?id=8mOREAAAQBAJ&dq=harry+potter&hl=&cd=6&source=gbs_api",
+        "infoLink": "http://books.google.com.ni/books?id=8mOREAAAQBAJ&dq=harry+potter&hl=&source=gbs_api",
+        "canonicalVolumeLink": "https://books.google.com/books/about/Harry_Potter_Un_a%C3%B1o_m%C3%A1gico_Harry_Potte.html?hl=&id=8mOREAAAQBAJ"
+      },
+      "saleInfo": {
+        "country": "NI",
+        "saleability": "NOT_FOR_SALE",
+        "isEbook": false
+      },
+      "accessInfo": {
+        "country": "NI",
+        "viewability": "NO_PAGES",
+        "embeddable": false,
+        "publicDomain": false,
+        "textToSpeechPermission": "ALLOWED",
+        "epub": {
+          "isAvailable": false
+        },
+        "pdf": {
+          "isAvailable": false
+        },
+        "webReaderLink": "http://play.google.com/books/reader?id=8mOREAAAQBAJ&hl=&source=gbs_api",
+        "accessViewStatus": "NONE",
+        "quoteSharingAllowed": false
+      },
+      "searchInfo": {
+        "textSnippet": "This irresistible gift book takes readers on an unforgettable journey through the seasons at Hogwarts."
+      }
+    },
+    {
+      "kind": "books#volume",
+      "id": "fQBiAwAAQBAJ",
+      "etag": "U9imW6Dn3G0",
+      "selfLink": "https://www.googleapis.com/books/v1/volumes/fQBiAwAAQBAJ",
+      "volumeInfo": {
+        "title": "Harry Potter y la Biblia",
+        "subtitle": "La amenaza tras la magia",
+        "authors": [
+          "Richard Abanes"
+        ],
+        "publisher": "Vida",
+        "publishedDate": "2015-03-24",
+        "description": "Harry Potter y sus aventuras mágicas en una escuela de hechicería continúa cautivando a millones de personas mundialmente. El mercado ha sido inundado con un centenar de productos relacionados a esta historia: juegos de barajas, ropa y hasta muebles para el hogar.Sin embargo, unas cuantas preguntas al respecto deben ser formuladas:* Ofrece Harry Potter alguna moraleja positiva para los niños de hoy?* La hechicería de Harry es verdaderamente ficción o esta basada en el ocultismo?* Cómo se compara Harry Potter a otros libros de ficción para niños escritos por C.S. Lewis o J.R.R. Tolkien?En este libro amigable y de gran ayuda, Richard Abanes responde a estas interrogantes, analiza profundamente a una sociedad que tiende a volcarse al paganismo y examina la razón de por qué Dios dijo \"no\" al ocultismo.Harry Potter y la Biblia le ayudará a decidir sabiamente respecto a este tema para su familia.",
+        "industryIdentifiers": [
+          {
+            "type": "ISBN_13",
+            "identifier": "9780829777437"
+          },
+          {
+            "type": "ISBN_10",
+            "identifier": "0829777431"
+          }
+        ],
+        "readingModes": {
+          "text": true,
+          "image": true
+        },
+        "pageCount": 246,
+        "printType": "BOOK",
+        "categories": [
+          "Religion"
+        ],
+        "averageRating": 3,
+        "ratingsCount": 2,
+        "maturityRating": "NOT_MATURE",
+        "allowAnonLogging": true,
+        "contentVersion": "2.8.9.0.preview.3",
+        "panelizationSummary": {
+          "containsEpubBubbles": false,
+          "containsImageBubbles": false
+        },
+        "imageLinks": {
+          "smallThumbnail": "http://books.google.com/books/content?id=fQBiAwAAQBAJ&printsec=frontcover&img=1&zoom=5&edge=curl&source=gbs_api",
+          "thumbnail": "http://books.google.com/books/content?id=fQBiAwAAQBAJ&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api"
+        },
+        "language": "es",
+        "previewLink": "http://books.google.com.ni/books?id=fQBiAwAAQBAJ&pg=PT133&dq=harry+potter&hl=&cd=7&source=gbs_api",
+        "infoLink": "https://play.google.com/store/books/details?id=fQBiAwAAQBAJ&source=gbs_api",
+        "canonicalVolumeLink": "https://play.google.com/store/books/details?id=fQBiAwAAQBAJ"
+      },
+      "saleInfo": {
+        "country": "NI",
+        "saleability": "FOR_SALE",
+        "isEbook": true,
+        "listPrice": {
+          "amount": 3.99,
+          "currencyCode": "USD"
+        },
+        "retailPrice": {
+          "amount": 2.99,
+          "currencyCode": "USD"
+        },
+        "buyLink": "https://play.google.com/store/books/details?id=fQBiAwAAQBAJ&rdid=book-fQBiAwAAQBAJ&rdot=1&source=gbs_api",
+        "offers": [
+          {
+            "finskyOfferType": 1,
+            "listPrice": {
+              "amountInMicros": 3990000,
+              "currencyCode": "USD"
+            },
+            "retailPrice": {
+              "amountInMicros": 2990000,
+              "currencyCode": "USD"
+            }
+          }
+        ]
+      },
+      "accessInfo": {
+        "country": "NI",
+        "viewability": "PARTIAL",
+        "embeddable": true,
+        "publicDomain": false,
+        "textToSpeechPermission": "ALLOWED",
+        "epub": {
+          "isAvailable": true,
+          "acsTokenLink": "http://books.google.com.ni/books/download/Harry_Potter_y_la_Biblia-sample-epub.acsm?id=fQBiAwAAQBAJ&format=epub&output=acs4_fulfillment_token&dl_type=sample&source=gbs_api"
+        },
+        "pdf": {
+          "isAvailable": true,
+          "acsTokenLink": "http://books.google.com.ni/books/download/Harry_Potter_y_la_Biblia-sample-pdf.acsm?id=fQBiAwAAQBAJ&format=pdf&output=acs4_fulfillment_token&dl_type=sample&source=gbs_api"
+        },
+        "webReaderLink": "http://play.google.com/books/reader?id=fQBiAwAAQBAJ&hl=&source=gbs_api",
+        "accessViewStatus": "SAMPLE",
+        "quoteSharingAllowed": false
+      },
+      "searchInfo": {
+        "textSnippet": "... Harry nació en julio de 1980 . 18 Declaraciones disponibles en Internet en www.astrologyalive.com . 19 Declaraciones disponibles en http://www.mikids.com/\u003cb\u003eharrypotter\u003c/b\u003e/Astrology.htm . 20 J.K. ... \u003cb\u003eHarry Potter\u003c/b\u003e y el cáliz de fuego, p."
+      }
+    },
+    {
+      "kind": "books#volume",
+      "id": "dIg8PgAACAAJ",
+      "etag": "TrPi4MWAVt8",
+      "selfLink": "https://www.googleapis.com/books/v1/volumes/dIg8PgAACAAJ",
+      "volumeInfo": {
+        "title": "Harry Potter y el prisionero de Azkaban",
+        "authors": [
+          "J. K. Rowling",
+          "Adolfo Muñoz García",
+          "Nieves Martín Azofra"
+        ],
+        "publisher": "Turtleback Books",
+        "publishedDate": "2001",
+        "description": "Por la cicatriz que tiene en la frente, sabemos que Harry Potter no es un niño como los demás, sino el héroe que venció a lord Voldemort, culpable de la muerte de sus padres. Desde entonces, a Harry no le queda más remedio que vivir con sus pesados tíos y su insoportable primo Dudley, todos ellos muggles, o sea, personas no magas. Igual que en las dos primeras partes de la serie, Harry aguarda con impaciencia el inicio del tercer curso en el Colegio Hogwarts de Magia. Tras haber cumplido los trece años, solo y lejos de sus amigos de Hogwarts, Harry se pelea con su bigotuda tía Marge, a la que convierte en globo, y debe huir en un autobús mágico. Mientras tanto, de la prisión de Azkaban se ha escapado un terrible villano, Sirius Black, un asesino en serie con poderes mágicos que fue cómplice de lord Voldemort y que parece dispuesto a borrar a Harry del mapa. Y por si esto fuera poco, Harry deberá enfrentarse también a unos terribles monstruos, los dementores, seres abominables capaces de robarles la felicidad a los magos y de eliminar todo recuerdo hermoso de aquellos que osan mirarlos. Lo que ninguno de estos malvados personajes sabe es que Harry, con la ayuda de sus fieles amigos Ron y Hermione, es capaz de todo ye mucho más.",
+        "industryIdentifiers": [
+          {
+            "type": "ISBN_10",
+            "identifier": "0613359585"
+          },
+          {
+            "type": "ISBN_13",
+            "identifier": "9780613359580"
+          }
+        ],
+        "readingModes": {
+          "text": false,
+          "image": false
+        },
+        "pageCount": 359,
+        "printType": "BOOK",
+        "categories": [
+          "Juvenile Fiction"
+        ],
+        "averageRating": 5,
+        "ratingsCount": 1,
+        "maturityRating": "NOT_MATURE",
+        "allowAnonLogging": false,
+        "contentVersion": "preview-1.0.0",
+        "imageLinks": {
+          "smallThumbnail": "http://books.google.com/books/content?id=dIg8PgAACAAJ&printsec=frontcover&img=1&zoom=5&source=gbs_api",
+          "thumbnail": "http://books.google.com/books/content?id=dIg8PgAACAAJ&printsec=frontcover&img=1&zoom=1&source=gbs_api"
+        },
+        "language": "es",
+        "previewLink": "http://books.google.com.ni/books?id=dIg8PgAACAAJ&dq=harry+potter&hl=&cd=8&source=gbs_api",
+        "infoLink": "http://books.google.com.ni/books?id=dIg8PgAACAAJ&dq=harry+potter&hl=&source=gbs_api",
+        "canonicalVolumeLink": "https://books.google.com/books/about/Harry_Potter_y_el_prisionero_de_Azkaban.html?hl=&id=dIg8PgAACAAJ"
+      },
+      "saleInfo": {
+        "country": "NI",
+        "saleability": "NOT_FOR_SALE",
+        "isEbook": false
+      },
+      "accessInfo": {
+        "country": "NI",
+        "viewability": "NO_PAGES",
+        "embeddable": false,
+        "publicDomain": false,
+        "textToSpeechPermission": "ALLOWED",
+        "epub": {
+          "isAvailable": false
+        },
+        "pdf": {
+          "isAvailable": false
+        },
+        "webReaderLink": "http://play.google.com/books/reader?id=dIg8PgAACAAJ&hl=&source=gbs_api",
+        "accessViewStatus": "NONE",
+        "quoteSharingAllowed": false
+      },
+      "searchInfo": {
+        "textSnippet": "Por la cicatriz que tiene en la frente, sabemos que Harry Potter no es un niño como los demás, sino el héroe que venció a lord Voldemort, culpable de la muerte de sus padres."
+      }
+    },
+    {
+      "kind": "books#volume",
+      "id": "_mKREAAAQBAJ",
+      "etag": "ccSMK2j4HQU",
+      "selfLink": "https://www.googleapis.com/books/v1/volumes/_mKREAAAQBAJ",
+      "volumeInfo": {
+        "title": "La cocina de Hogwarts / The Official Harry Potter Baking Book",
+        "authors": [
+          "Joanna Farrow"
+        ],
+        "publisher": "National Geographic Books",
+        "publishedDate": "2022-05-24",
+        "description": "¡Adéntrate en el Colegio Hogwarts de Magia y Hechicería a través de sus cocinas! Inspirado en las películas de Harry Potter, este libro contiene 45 recetas acompañadas de magníficas fotografías, y es una obra que todos los seguidores de la saga querrán tener. Sus deliciosas recetas, desde los pasteles de calabaza hasta los muffins de búhos salados , pasando por las espectrogafas de Luna o el castillo de Hogwarts de pan de jengibre , cautivarán tus sentidos. Invita a tus amigos a un banquete como los del Gran Comedor de Hogwarts ¡o disfruta de un pastel individual! La cocina de Hogwarts incluye numerosas recetas vegetarianas, veganas y sin gluten. ¡Es ideal para todos! ENGLISH DESCRIPTION #1 NEW YORK TIMES BESTSELLER! Bake your way through Hogwarts School of Witchcraft and Wizardry! Inspired by the films, this is the ONE and ONLY official Harry Potter cookbook! Packed with over 40 recipes and gorgeous, eye-catching photography, this baking cookbook is a must-have for every Harry Potter fan. Delight in 43 tasty recipes inspired by the Harry Potter films! From Pumpkin Patch Pies to Owl Muffins, Luna's Spectrespecs Cookies to Hogwarts Gingerbread, The Official Harry Potter Baking Cookbook is packed with mouthwatering recipes that will, dare we say, ... ensnare the senses. Host a Great Hall-inspired feast for your friends or delight in a portion for one. Includes recipes for all kinds of delicious baked goods, as well as nutritional and dietary information. This baking cookbook is great for everyone and includes gluten-free, vegetarian, and vegan recipes as well!",
+        "industryIdentifiers": [
+          {
+            "type": "ISBN_13",
+            "identifier": "9788418174728"
+          },
+          {
+            "type": "ISBN_10",
+            "identifier": "8418174722"
+          }
+        ],
+        "readingModes": {
+          "text": true,
+          "image": false
+        },
+        "pageCount": 0,
+        "printType": "BOOK",
+        "categories": [
+          "Juvenile Nonfiction"
+        ],
+        "maturityRating": "NOT_MATURE",
+        "allowAnonLogging": false,
+        "contentVersion": "preview-1.0.0",
+        "panelizationSummary": {
+          "containsEpubBubbles": false,
+          "containsImageBubbles": false
+        },
+        "imageLinks": {
+          "smallThumbnail": "http://books.google.com/books/content?id=_mKREAAAQBAJ&printsec=frontcover&img=1&zoom=5&source=gbs_api",
+          "thumbnail": "http://books.google.com/books/content?id=_mKREAAAQBAJ&printsec=frontcover&img=1&zoom=1&source=gbs_api"
+        },
+        "language": "es",
+        "previewLink": "http://books.google.com.ni/books?id=_mKREAAAQBAJ&dq=harry+potter&hl=&cd=9&source=gbs_api",
+        "infoLink": "http://books.google.com.ni/books?id=_mKREAAAQBAJ&dq=harry+potter&hl=&source=gbs_api",
+        "canonicalVolumeLink": "https://books.google.com/books/about/La_cocina_de_Hogwarts_The_Official_Harry.html?hl=&id=_mKREAAAQBAJ"
+      },
+      "saleInfo": {
+        "country": "NI",
+        "saleability": "NOT_FOR_SALE",
+        "isEbook": false
+      },
+      "accessInfo": {
+        "country": "NI",
+        "viewability": "NO_PAGES",
+        "embeddable": false,
+        "publicDomain": false,
+        "textToSpeechPermission": "ALLOWED",
+        "epub": {
+          "isAvailable": false
+        },
+        "pdf": {
+          "isAvailable": false
+        },
+        "webReaderLink": "http://play.google.com/books/reader?id=_mKREAAAQBAJ&hl=&source=gbs_api",
+        "accessViewStatus": "NONE",
+        "quoteSharingAllowed": false
+      },
+      "searchInfo": {
+        "textSnippet": "ENGLISH DESCRIPTION #1 NEW YORK TIMES BESTSELLER! Bake your way through Hogwarts School of Witchcraft and Wizardry! Inspired by the films, this is the ONE and ONLY official Harry Potter cookbook!"
+      }
+    },
+    {
+      "kind": "books#volume",
+      "id": "A4AunwEACAAJ",
+      "etag": "JbURyR5MaL8",
+      "selfLink": "https://www.googleapis.com/books/v1/volumes/A4AunwEACAAJ",
+      "volumeInfo": {
+        "title": "Harry Potter y el misterio del príncipe",
+        "authors": [
+          "J.K. Rowling"
+        ],
+        "publisher": "Pottermore",
+        "publishedDate": "2012-04-24",
+        "description": "Con dieciséis años cumplidos, Harry inicia el sexto curso en Hogwarts en medio de terribles acontecimientos que asolan Inglaterra. Elegido capitán del equipo de Quidditch, los entrenamientos, los exámenes y las chicas ocupan todo su tiempo, pero la tranquilidad dura poco. A pesar de los férreos controles de seguridad que protegen la escuela, dos alumnos son brutalmente atacados. Dumbledore sabe que se acerca el momento, anunciado por la Profecía, en que Harry y Voldemort se enfrentarán a muerte: «El único con poder para vencer al Señor Tenebroso se acerca... Uno de los dos debe morir a manos del otro, pues ninguno de los dos podrá vivir mientras siga el otro con vida.». El anciano director solicitará la ayuda de Harry y juntos emprenderán peligrosos viajes para intentar debilitar al enemigo, para lo cual el joven mago contará con la ayuda de un viejo libro de pociones perteneciente a un misterioso príncipe, alguien que se hace llamar Príncipe Mestizo.",
+        "industryIdentifiers": [
+          {
+            "type": "ISBN_10",
+            "identifier": "1781101159"
+          },
+          {
+            "type": "ISBN_13",
+            "identifier": "9781781101155"
+          }
+        ],
+        "readingModes": {
+          "text": false,
+          "image": false
+        },
+        "printType": "BOOK",
+        "categories": [
+          "Juvenile Fiction"
+        ],
+        "maturityRating": "NOT_MATURE",
+        "allowAnonLogging": false,
+        "contentVersion": "preview-1.0.0",
+        "imageLinks": {
+          "smallThumbnail": "http://books.google.com/books/content?id=A4AunwEACAAJ&printsec=frontcover&img=1&zoom=5&source=gbs_api",
+          "thumbnail": "http://books.google.com/books/content?id=A4AunwEACAAJ&printsec=frontcover&img=1&zoom=1&source=gbs_api"
+        },
+        "language": "es",
+        "previewLink": "http://books.google.com.ni/books?id=A4AunwEACAAJ&dq=harry+potter&hl=&cd=10&source=gbs_api",
+        "infoLink": "http://books.google.com.ni/books?id=A4AunwEACAAJ&dq=harry+potter&hl=&source=gbs_api",
+        "canonicalVolumeLink": "https://books.google.com/books/about/Harry_Potter_y_el_misterio_del_pr%C3%ADncipe.html?hl=&id=A4AunwEACAAJ"
+      },
+      "saleInfo": {
+        "country": "NI",
+        "saleability": "NOT_FOR_SALE",
+        "isEbook": false
+      },
+      "accessInfo": {
+        "country": "NI",
+        "viewability": "NO_PAGES",
+        "embeddable": false,
+        "publicDomain": false,
+        "textToSpeechPermission": "ALLOWED",
+        "epub": {
+          "isAvailable": false
+        },
+        "pdf": {
+          "isAvailable": false
+        },
+        "webReaderLink": "http://play.google.com/books/reader?id=A4AunwEACAAJ&hl=&source=gbs_api",
+        "accessViewStatus": "NONE",
+        "quoteSharingAllowed": false
+      },
+      "searchInfo": {
+        "textSnippet": "Con dieciséis años cumplidos, Harry inicia el sexto curso en Hogwarts en medio de terribles acontecimientos que asolan Inglaterra."
+      }
+    }
+  ]
+}
