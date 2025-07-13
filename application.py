@@ -94,11 +94,16 @@ def book_detail(id):
     response = requests.get(url)
     if response.status_code == 200:
         data = response.json()
+        print('DEBUG Google Books API data:', data)  # DEBUG
         if "volumeInfo" in data:
             book = data["volumeInfo"]
+            print('DEBUG book (volumeInfo):', book)  # DEBUG
+            average_rating = book.get("averageRating", "No disponible")
+            ratings_count = book.get("ratingsCount", "No disponible")
             reviews = Review.query.filter_by(book_id=id).all()
             return render_template(
-                "book_detail.html", book=book, book_id=id, reviews=reviews
+                "book_detail.html", book=book, book_id=id, reviews=reviews,
+                average_rating=average_rating, ratings_count=ratings_count
             )
         else:
             return render_template(

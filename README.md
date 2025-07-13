@@ -7,7 +7,7 @@ Web Programming with Python and JavaScript
 Este proyecto está inspirado en el [Project 1 de CS50W](https://docs.cs50.net/ocw/web/projects/1/project1.html).
 
 **Diferencias principales:**
-- El proyecto del enlace pide el uso de Heroku para la base de datos y la API de Goodreads para ratings externos.
+- El proyecto pide el uso de Heroku para la base de datos y la API de Goodreads para ratings externos.
 - En este proyecto se utiliza Render.com para la base de datos y la API de Google Books, porque **una versión anterior del proyecto original pedía exactamente esos requisitos** (Render y Google Books). Por eso, las diferencias con esa versión son mínimas y solo afectan detalles menores de integración y presentación.
 
 ---

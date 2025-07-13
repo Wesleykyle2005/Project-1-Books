@@ -49,11 +49,9 @@
             </div>
             <div class="book_info_section">
                 <h2>Average rating:</h2>
-                <p>{% if book.averageRating %}{{ book.averageRating }}{% else %}Average rating not available.{% endif %}</p>
-            </div>
-            <div class="book_info_section">
+                <p>{{ average_rating }}</p>
                 <h2>Number of ratings:</h2>
-                <p>{% if book.ratingsCount %}{{ book.ratingsCount }}{% else %}Number of ratings not available.{% endif %}</p>
+                <p>{{ ratings_count }}</p>
             </div>
         </div>
         {% endif %}
