@@ -1,78 +1,80 @@
-# Project 1 - Biblioteca Web 📚
+# Project 1 - Web Library 📚
 
 Web Programming with Python and JavaScript
 
-**¡Proyecto desplegado en Render! 🚀**
+**Project deployed on Render! 🚀**
 
-Accede aquí: [https://cs50w-books.onrender.com/](https://cs50w-books.onrender.com/)
+Access it here: [https://cs50w-books.onrender.com/](https://cs50w-books.onrender.com/)
 
-## Inspiración y diferencias 💡
+## Inspiration and Differences 💡
 
-Este proyecto está inspirado en el [Project 1 de CS50W](https://docs.cs50.net/ocw/web/projects/1/project1.html).
+This project is inspired by [CS50W Project 1](https://docs.cs50.net/ocw/web/projects/1/project1.html).
 
-**Diferencias principales:**
-- El proyecto del enlace pide el uso de Heroku para la base de datos y la API de Goodreads para ratings externos.
-- En este proyecto se utiliza Render.com para la base de datos y la API de Google Books, porque **una versión anterior del proyecto original pedía exactamente esos requisitos** (Render y Google Books). Por eso, las diferencias con esa versión son mínimas y solo afectan detalles menores de integración y presentación.
+**Main differences:**
 
----
-
-## Descripción 📝
-
-Este proyecto es una aplicación web para buscar libros, ver detalles, dejar reseñas y gestionar usuarios. Utiliza Flask, SQLAlchemy y la API de Google Books. Puedes usar una base de datos PostgreSQL (recomendado para producción) o SQLite (más sencillo para pruebas locales).
+* The original project requires using Heroku for the database and the Goodreads API for external ratings.
+* This version uses Render.com for the database and the Google Books API, because **an earlier version of the original project required exactly those services** (Render and Google Books). Therefore, the differences are minimal and only affect minor integration and presentation details.
 
 ---
 
-## Capturas de pantalla 📸
+## Description 📝
 
-A continuación se muestran algunas capturas de pantalla de la aplicación en diferentes vistas y modos:
-
-- **Pantalla de búsqueda (modo claro):**
-  ![Pantalla de búsqueda modo claro](static/images/search_light.png)
-
-- **Pantalla de búsqueda (modo oscuro):**
-  ![Pantalla de búsqueda modo oscuro](static/images/search_black.png)
-
-- **Pantalla de login (modo claro):**
-  ![Pantalla de login modo claro](static/images/login.png)
-
-- **Pantalla de login (modo oscuro):**
-  ![Pantalla de login modo oscuro](static/images/login_black.png)
-
-- **Pantalla de registro:**
-  ![Pantalla de registro](static/images/register.png)
+This project is a web application for searching books, viewing details, posting reviews, and managing users. It uses Flask, SQLAlchemy, and the Google Books API. You can use a PostgreSQL database (recommended for production) or SQLite (easier for local testing).
 
 ---
 
-## Estructura del proyecto 🗂️
+## Screenshots 📸
 
-- `application.py`: Lógica principal de la aplicación Flask
-- `database.py`: Modelos y configuración de la base de datos
-- `import.py`: Script para importar libros desde CSV (debes ejecutarlo manualmente para cargar los datos iniciales)
-- `drop_all.py`: Script para eliminar todas las tablas
-- `static/`: Archivos estáticos (CSS, imágenes, JS)
-- `templates/`: Plantillas HTML Jinja2
-- `books.csv`: Datos de libros de ejemplo
-- `requirements.txt`: Dependencias del proyecto
+Below are some screenshots of the application in different views and modes:
+
+* **Search screen (light mode):**
+  ![Search screen light mode](static/images/search_light.png)
+
+* **Search screen (dark mode):**
+  ![Search screen dark mode](static/images/search_black.png)
+
+* **Login screen (light mode):**
+  ![Login screen light mode](static/images/login.png)
+
+* **Login screen (dark mode):**
+  ![Login screen dark mode](static/images/login_black.png)
+
+* **Registration screen:**
+  ![Registration screen](static/images/register.png)
 
 ---
 
-## Requisitos previos ⚙️
-- Python 3.x
-- pip
-- (Opcional) Cuenta en [Render.com](https://render.com/) para base de datos PostgreSQL gratuita
+## Project Structure 🗂️
+
+* `application.py`: Main Flask application logic
+* `database.py`: Database models and configuration
+* `import.py`: Script to import books from CSV (must be run manually to load initial data)
+* `drop_all.py`: Script to drop all tables
+* `static/`: Static assets (CSS, images, JS)
+* `templates/`: Jinja2 HTML templates
+* `books.csv`: Sample book data
+* `requirements.txt`: Project dependencies
 
 ---
 
-## 1. Crear y activar entorno virtual 🐍
+## Prerequisites ⚙️
+
+* Python 3.x
+* pip
+* (Optional) An account on [Render.com](https://render.com/) for a free PostgreSQL database
+
+---
+
+## 1. Create and activate a virtual environment 🐍
 
 ```powershell
-python -m venv mientorno
-mientorno\Scripts\activate
+python -m venv myenv
+myenv\Scripts\activate
 ```
 
 ---
 
-## 2. Instalar dependencias 📦
+## 2. Install dependencies 📦
 
 ```powershell
 pip install -r requirements.txt
@@ -81,59 +83,63 @@ pip install flask_wtf
 
 ---
 
-## 3. Configurar variables de entorno 🔑
+## 3. Configure environment variables 🔑
 
-### Opción A: Usar SQLite (más fácil para pruebas locales)
-No necesitas configurar `DATABASE_URL`. El proyecto puede configurarse para usar SQLite editando `application.py`:
+### Option A: Use SQLite (easier for local testing)
+
+No need to set `DATABASE_URL`. The project can be configured to use SQLite by editing `application.py`:
 
 ```python
-app.config["SQLALCHEMY_DATABASE_URI"] = "sqlite:///libros.db"
+app.config["SQLALCHEMY_DATABASE_URI"] = "sqlite:///books.db"
 ```
 
-### Opción B: Usar PostgreSQL en Render.com
+### Option B: Use PostgreSQL on Render.com
 
-1. Crea una cuenta en [Render.com](https://render.com/)
-2. Ve a "Dashboard" > "New" > "PostgreSQL"
-3. Ponle un nombre a tu base de datos y crea el servicio
-4. Copia la URL de conexión (formato: `postgresql://usuario:contraseña@host:puerto/nombre_db`)
-5. En tu terminal, configura la variable de entorno:
+1. Create an account at [Render.com](https://render.com/)
+2. Go to "Dashboard" > "New" > "PostgreSQL"
+3. Name your database and create the service
+4. Copy the connection URL (format: `postgresql://user:password@host:port/dbname`)
+5. In your terminal, set the environment variable:
 
 ```powershell
-$env:DATABASE_URL = "<tu_url_de_conexion>"
+$env:DATABASE_URL = "<your_connection_url>"
 ```
 
 ---
 
-## 4. Otras variables de entorno necesarias 🧩
+## 4. Other required environment variables 🧩
 
 ```powershell
-$env:API_KEY = "<tu_api_key_de_google_books>"
+$env:API_KEY = "<your_google_books_api_key>"
 $env:FLASK_APP = "application.py"
-$env:SECRETKEY = "clavesecreta"
+$env:SECRETKEY = "secretkey"
 $env:FLASK_DEBUG = 1
 ```
 
 ---
 
-## 5. Ejecutar la aplicación ▶️
+## 5. Run the application ▶️
 
 ```powershell
 flask run
 ```
-O bien:
+
+Or:
+
 ```powershell
 python application.py
 ```
 
 ---
 
-## 6. Primer uso 🚦
-- Si la base de datos está vacía, **debes ejecutar manualmente** el script `import.py` para cargar los datos de `books.csv`:
+## 6. First-time setup 🚦
+
+* If the database is empty, **you must manually run** the `import.py` script to load data from `books.csv`:
 
 ```powershell
 python import.py
 ```
 
-- Puedes crear una cuenta nueva desde la web.
-- Las búsquedas pueden hacerse por ISBN, título o autor.
-- Solo puedes dejar una reseña por libro y no es editable.
+* You can register a new account through the web interface.
+* Searches can be performed by ISBN, title, or author.
+* Only one review is allowed per book and it cannot be edited.
