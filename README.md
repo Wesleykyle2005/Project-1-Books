@@ -6,7 +6,7 @@ Web Programming with Python and JavaScript
 
 Access it here: [https://cs50w-books.onrender.com/](https://cs50w-books.onrender.com/)
 
-🗪 README.md en español: [README.md](README.md)
+🗪 README.md en español: [README_ES.md](README_ES.md)
 
 ## Inspiration and Differences 💡
 
